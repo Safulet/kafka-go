@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Safulet/kafka-go/sasl"
 	"github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/segmentio/kafka-go/sasl"
 	"github.com/stretchr/testify/assert"
 
 	signer "github.com/aws/aws-sdk-go-v2/aws/signer/v4"

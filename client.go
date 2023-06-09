@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/segmentio/kafka-go/protocol"
+	"github.com/Safulet/kafka-go/protocol"
 )
 
 const (

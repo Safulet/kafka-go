@@ -3,8 +3,8 @@ package offsetcommit_test
 import (
 	"testing"
 
-	"github.com/segmentio/kafka-go/protocol/offsetcommit"
-	"github.com/segmentio/kafka-go/protocol/prototest"
+	"github.com/Safulet/kafka-go/protocol/offsetcommit"
+	"github.com/Safulet/kafka-go/protocol/prototest"
 )
 
 func TestOffsetCommitRequest(t *testing.T) {
