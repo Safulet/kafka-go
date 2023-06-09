@@ -28,6 +28,9 @@ type Message struct {
 	// If not set at the creation, Time will be automatically set when
 	// writing the message.
 	Time time.Time
+
+	// only for read monitor
+	StartReadTime time.Time
 }
 
 func (msg Message) message(cw *crc32Writer) message {

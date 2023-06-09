@@ -1547,6 +1547,7 @@ func (r *reader) readOffsets(conn *Conn) (first, last int64, err error) {
 }
 
 func (r *reader) sendMessage(ctx context.Context, msg Message, watermark int64) error {
+	msg.StartReadTime = time.Now()
 	select {
 	case r.msgs <- readerMessage{version: r.version, message: msg, watermark: watermark}:
 		return nil
